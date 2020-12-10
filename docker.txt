@@ -1,0 +1,6 @@
+docker run -it --name text -d centos:centos7 /bin/bash		-it /bin/bash 临时运行一个，退出即删除，-d后台运行
+docker run 	id						运行一个容器
+docker ps -a 						查看当前的所有容器
+docker search centos 				查找
+docker images 						查看当前镜像
+docker pull centos:centos7			下载镜像

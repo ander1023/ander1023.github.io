@@ -1,0 +1,32 @@
+git init
+git add file
+git commit -m ""
+git log
+git reflog 
+git reset --hard id
+git status
+git diff
+
+git checkout --file（拉取最近一次的提交》》》工作区）
+git reset HEAD file(拉取最近一次的提交》》》暂存区【不修改本地】)
+git rm	file	（删除一个文件【工作区与缓存区】）
+git rm --cached file	(删除一个文件【仅缓存区】)
+
+git remote -v
+git remote add origin url
+git remote rm id
+git push -u origin master  将本地master推送到origin主机
+git pull	（同步本地）
+git fetch	(同步版本库)
+
+
+
+git branch branchname
+git branch -a
+git branch -d
+git checkout branchname
+git checkout -b branchname
+git meger master
+
+
+git stash	将本地修改进行存储
