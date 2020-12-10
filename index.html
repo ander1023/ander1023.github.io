@@ -2,28 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/default.css">
     <title>Title</title>
 
 </head>
 <body>
     <div id="header">
+        <div id="author" onclick="pageTop()">大山猛</div>
         <div id="nav">
-            <a href="#menu" onclick="menuShow()">menu</a>
+            <a id="menuButton" onclick="toggleMenuVisi()">MENU</a>
         </div>
     </div>
     <div id="menu">
-        <a id="closeItem" onclick="menuHidden()">close</a>
+
         <ul>
+            <li><a style="color: dodgerblue" href="#" >1</a></li>
             <li><a href="#">1</a></li>
             <li><a href="#">1</a></li>
             <li><a href="#">1</a></li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">1</a></li>
+            <li> <a id="closeItem" onclick="">CLOSE</a></li>
 
         </ul>
 
     </div>
-<script rel="script" src="js/menu.js"></script>
+    <div id="title">
+        <h1>123123</h1>
+    </div>
+    <div id="main">
+    </div>
+    <div id="footer">
+        <div id="scrollBar"></div>
+    </div>
+    <script rel="script" src="js/header.js"></script>
 </body>
 </html>
