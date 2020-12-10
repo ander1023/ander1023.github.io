@@ -61,7 +61,12 @@ function toggleMenuVisi(){
         status = !status;
     }
 }
+function getDemoHeihgt(demo){
+    var height = 0;
 
+
+    return height;
+}
 function pageTop(){
     scrollTo({
         top : 0,

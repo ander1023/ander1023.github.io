@@ -1,5 +1,6 @@
 body.menuOpen{
     overflow: hidden;
+    /*filter: blur(2px);*/
     /*transition: 1s;*/
     /*opacity: .3;*/
 }
@@ -9,11 +10,20 @@ body{
 
     padding: 0;
     margin: 0;
-    background: url("../images/bg01.jpg") no-repeat fixed;
+    background: url("../../images/bg01.jpg") no-repeat fixed;
     background-size: cover;
 }
 body.load{
     opacity: 1;
+}
+h1{
+    font-size: 45px;
+    letter-spacing: -2px;
+    color: dodgerblue;
+}
+p{
+    /*font-size: 10px;*/
+    color: #7dbcfa;
 }
 #header{
     display: flex;
@@ -34,7 +44,7 @@ body.load{
     position: inherit;
     bottom: 70px;
     right: 0;
-    /*letter-spacing: 2px;*/
+    letter-spacing: -1px;
     line-height: inherit;
     padding: 0 20px;
     height: 50px;
@@ -99,11 +109,12 @@ body.load{
     top: 0;
     left: 0;
     align-items: center;
-    background: rgba(36, 41, 67, 0.4);
+    /*background: rgba(36, 41, 67, 0.4);*/
     transition: .4s;
     z-index: 10002;
     visibility: hidden;
     opacity: 0;
+    background: rgba(0,0,0,.85);
 }
     #menu.inner{
         visibility: visible;
