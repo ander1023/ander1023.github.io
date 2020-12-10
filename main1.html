@@ -2,42 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/mould/header.css">
-    <link rel="stylesheet" href="css/mould/main.css">
     <title>Title</title>
-
+<!--    <link rel="stylesheet" href="css/default.css">-->
+    <link rel="stylesheet" href="css/main1.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
-    <div id="header">
-        <div id="author" onclick="pageTop()">大山猛</div>
-        <div id="nav">
-            <a id="menuButton" onclick="toggleMenuVisi()">MENU</a>
-        </div>
-    </div>
-    <div id="menu">
+<div id="nav">
+    <h1 id="topTitle" onclick="getTop()"><a>Big Picture</a></h1>
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="main1.html" style="color: #2f9eff">MEMORY</a></li>
+        <li><a href="main2.html">FRIENDS</a></li>
+        <li><a href="main3.html">ABOUT</a></li>
 
+    </ul>
+</div>
+<div id="black"></div>
+<div id="one">
+    <div id="oneContent">
+        <h2>Memory</h2>
+        <p>随想、回忆、自由</p>
+    </div>
+</div>
+<div id="main">
+    <div id="images">
         <ul>
-            <li><a href="index.html" >HOME</a></li>
-            <li><a style="color: dodgerblue" href="main1.html">1</a></li>
-            <li><a href="main2.html">1</a></li>
-            <li><a href="main3.html">1</a></li>
-            <li> <a id="closeItem" onclick="">CLOSE</a></li>
+            <li><div style="background: url('./images/b.jpg') no-repeat center fixed"></div> </li>
+            <li>
+                <div class="imageItem" style="background: url('./images/m1.jpg') center center;background-size:cover;">
+                </div>
+            </li>
+            <li><div style="background: url('./images/b.jpg') no-repeat center fixed"></div> </li>
+            <li>
+                <div class="imageItem" style="background: url('./images/m2.jpg') no-repeat center;background-size:cover;">
+                </div>
+            </li>
+            <li><div style="background: url('./images/b.jpg') no-repeat center fixed"></div> </li>
+            <li>
+                <div class="imageItem" style="background: url('./images/m3.jpg') no-repeat center;background-size:cover;">
+                </div>
+            </li>
+            <li><div style="background: url('./images/b.jpg') no-repeat center fixed"></div> </li>
+            <li>
+                <div class="imageItem" style="background: url('./images/m5.jpg') no-repeat center;background-size:cover;">
+                </div>
+            </li>
+            <li><div style="background: url('./images/b.jpg') no-repeat center fixed"></div> </li>
 
         </ul>
 
-    </div>
-<!--    <div id="title">-->
-<!--        <h1>123123</h1>-->
-<!--    </div>-->
-    <div id="main">
-        <div id="title">
-            <h1>123</h1>
-            <p>123</p>
-        </div>
-        <div id="content">
-        </div>
+
     </div>
 
-    <script rel="script" src="js/header.js"></script>
+</div>
+
+
+
+
+<div id="footer">
+    <div id="footerContent" onclick="getTop()">
+        <p class="text">" 到底啦,快拉我上去 "</p>
+        <p id="runAllTime">网站运行已经tian啦</p>
+    </div>
+</div>
+
+<script src="js/default.js"></script>
+<script src="js/main1.js"></script>
 </body>
 </html>
