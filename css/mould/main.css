@@ -5,19 +5,22 @@ body{
     align-items: center;
     justify-content: center;
 }
-#main{
+.main{
     display: inherit;
     justify-content: inherit;
     flex-direction: column;
     align-items: center;
-    width: 70%;
-    margin: 20vh 0;
-    height: 60vh;
+    width: 60%;
+    margin: 5vh 0;
+    /*height: 60vh;*/
     background: rgba(255,255,255,.7);
     border-radius: 10px;
     /*opacity: .7;*/
 }
-    #main #title{
+/*.main :first-child{*/
+/*    margin: 20vh 0;*/
+/*}*/
+    .main .title{
         display: inherit;
         justify-content: inherit;
         flex-direction: column;
@@ -29,17 +32,17 @@ body{
         /*padding: 20px;*/
     }
 
-        #main #title > h1{
+        .main .title > h1{
             /*height: inherit;*/
             margin: 0;
             /*line-height: 80px;*/
         }
-        #main #title > p{
+        .main .title > p{
             /*height: inherit;*/
             margin: 0;
             /*line-height: 80px;*/
         }
-    #main #content{
+    .main .content{
         height: 80%;
         width: 80%;
         padding: 20px;

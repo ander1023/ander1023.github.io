@@ -1,4 +1,7 @@
-    #main #touXiang{
+.main{
+    margin: 20vh;
+}
+    .main #touXiang{
         border-radius: 50%;
         border: white 5px solid;
         opacity: 1;
@@ -8,11 +11,11 @@
         background-size: cover;
         transition: 1.5s;
         }
-    #main #touchTouXiang{
+    .main #touchTouXiang{
         border-radius: 50%;
         cursor: pointer;
     }
-    #main #touchTouXiang:hover #touXiang{
+    .main #touchTouXiang:hover #touXiang{
 
         transform: rotate3d(180,180,180,360deg);
     }

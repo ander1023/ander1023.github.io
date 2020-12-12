@@ -10,6 +10,7 @@ body.onload = ()=>{
     )
 }
 //
+
 body.onmousedown = (event)=> {
     setTimeout(
         ()=>{
@@ -61,7 +62,7 @@ function toggleMenuVisi(){
         status = !status;
     }
 }
-function getDemoHeihgt(demo){
+function getScrollHeight(demo){
     var height = 0;
 
 
