@@ -27,3 +27,5 @@ Ctrl+Alt+Enter：在当前行的上方插入新行
 
 Alt+Shift+向下箭头：将行向下移动
 Alt+Shift+向上箭头：将行向上移动
+
+alt + shift 鼠标点 	同时编辑多行
