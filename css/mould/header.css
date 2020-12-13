@@ -25,45 +25,54 @@ p{
     /*font-size: 10px;*/
     color: #7dbcfa;
 }
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: dodgerblue;
+}
 #header{
     display: flex;
-    height: 60px;
-    line-height: 60px;
     position: fixed;
+
+    height: 100vh;
+    width: 100px;
+
     top: 0;
-    right: 0;
-    font-size: 25px;
+    right: 10px;
     border: 0;
+
+    font-size: 25px;
+    line-height: 60px;
     font-weight: bolder;
     letter-spacing: 2px;
     color: #fff;
+
     user-select: none;
 }
 #author{
     font-size: 20px;
     position: inherit;
     bottom: 70px;
-    right: 0;
+    /*right: 0;*/
     letter-spacing: -1px;
     line-height: inherit;
-    padding: 0 20px;
+    /*padding: 0 20px;*/
     height: 50px;
 }
-    #author:after{
-        content: 'TOP';
-        display: flex;
-        justify-content: center;
-        font-size: 12px;
-        height: 20px;
-        width: 100%;
-        line-height: 20px;
-        margin-top: 0;
-
-    }
-        #author:after:hover{
-            color: dodgerblue;
-            cursor: pointer;
-        }
+#topBt{
+    position: inherit;
+    font-size: 26px;
+    height: 20px;
+    bottom: 40px;
+    line-height: 20px;
+    margin-top: 0;
+}
+#topBt:hover{
+    color: dodgerblue;
+    cursor: pointer;
+}
 #nav{
 
     /*display: inherit;*/
@@ -71,6 +80,7 @@ p{
     /*line-height: inherit;*/
     /*flex-grow: 1;*/
     /*justify-content: flex-end;*/
+    width: inherit;
 }
     #nav.menuItem.current{
         color: dodgerblue;
@@ -83,7 +93,7 @@ p{
         /*letter-spacing: 2px;*/
         height: inherit;
         line-height: inherit;
-        padding: 0 20px;
+        /*padding: 0 20px;*/
         color: #fff;
         text-decoration: none;
         opacity: 1;

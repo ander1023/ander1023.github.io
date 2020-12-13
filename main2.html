@@ -9,7 +9,8 @@
 </head>
 <body>
     <div id="header">
-        <div id="author" onclick="pageTop()">大山猛</div>
+        <div id="author"><a href="index.html">大山猛</a></div>
+        <div id="topBt" onclick="pageTop()">TOP</div>
         <div id="nav">
             <a id="menuButton" onclick="toggleMenuVisi()">MENU</a>
         </div>
@@ -31,10 +32,123 @@
 <!--    </div>-->
     <div class="main">
         <div class="title">
-            <h1>123</h1>
-            <p>123</p>
+            <h1>idea快捷键</h1>
+            <p><span style="color: dodgerblue">tag：</span>快捷键</p>
         </div>
         <div class="content">
+            <p>Ctrl+Y：删除当前行<br>
+                Ctrl+D:复制当前行<br>
+
+                Ctrl+G：定位到文件某一行<br>
+
+                F2：定位至下一个错误处<br>
+                Shift+F2：定位至前一个错误处<br>
+
+                Alt+Insert：产生构造方法，get/set方法等<br>
+                Alt+/：自动完成<br>
+
+                Ctrl+/：使用//注释<br>
+                Ctrl+Shift+/：使用/**/注释<br>
+
+                Ctrl+Alt+L：格式化代码<br>
+                Ctrl+Alt+I：自动缩进行<br>
+                Ctrl+Alt+O：优化import<br>
+
+                Ctrl+]：快速跳转至诸如{}围起来的代码块的结尾处<br>
+                Ctrl+[：快速跳转至诸如{}围起来的代码块的开头处<br>
+
+                Ctrl+W：选中整个单词<br>
+
+
+                Shift+Enter：在当前行的下方开始新行<br>
+                Ctrl+Alt+Enter：在当前行的上方插入新行<br>
+
+                Alt+Shift+向下箭头：将行向下移动<br>
+                Alt+Shift+向上箭头：将行向上移动<br>
+
+                alt + shift 鼠标点 	同时编辑多行</p>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="title">
+            <h1>git命令</h1>
+            <p><span style="color: dodgerblue">tag：</span>快捷键</p>
+        </div>
+        <div class="content">
+            <p>
+                git init<br>
+                git add file<br>
+                git commit -m ""<br>
+                git log<br>
+                git reflog<br>
+                git reset --hard id<br>
+                git status<br>
+                git diff<br>
+
+                git checkout --file（拉取最近一次的提交》》》工作区）<br>
+                git reset HEAD file(拉取最近一次的提交》》》暂存区【不修改本地】)<br>
+                git rm	file	（删除一个文件【工作区与缓存区】）<br>
+                git rm --cached file	(删除一个文件【仅缓存区】)<br>
+
+                git remote -v<br>
+                git remote add origin url<br>
+                git remote rm id<br>
+                git push -u origin master  将本地master推送到origin主机<br>
+                git pull	（同步本地）<br>
+                git fetch	(同步版本库)<br>
+
+
+
+                git branch branchname<br>
+                git branch -a<br>
+                git branch -d<br>
+                git checkout branchname<br>
+                git checkout -b branchname<br>
+                git meger master<br>
+
+
+                git stash	将本地修改进行存储<br>
+            </p>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="title">
+            <h1>sublime快捷键</h1>
+            <p><span style="color: dodgerblue">tag：</span>快捷键</p>
+        </div>
+        <div class="content">
+            <p>
+                c ent	下行插入<br>
+                c s ent 上行插入<br>
+                c s k 	删除整行<br>
+                c k k 	删除当前到行尾<br>
+                c s d 	复制到下一行<br>
+                c / 	当行注释<br>
+                c s / 	多行注释<br>
+                t		向右缩进<br>
+                s t		反向缩进<br>
+                c s [	折叠选中<br>
+                c s ]	展开选中<br>
+                c k 0 	展开所有<br>
+                c m		找括号<br>
+                c j		多行代码合并为一行<br>
+                c s ↑/↓	移动一行代码<br>
+
+                a f3	同名称编辑<br>
+
+
+                c f		普通搜索框<br>
+                c s f	文件夹搜索框<br>
+                c p/g/r	文件/跳行/函数<br>
+                c s p	命令框<br>
+
+
+
+                F11 全屏模式<br>
+                Shift+F11 免打扰模式<br>
+            </p>
         </div>
     </div>
 

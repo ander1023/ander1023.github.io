@@ -1,6 +1,12 @@
 .main{
+    justify-content: center;
     margin: 20vh;
 }
+    .main .content{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     .main #touXiang{
         border-radius: 50%;
         border: white 5px solid;
@@ -19,3 +25,9 @@
 
         transform: rotate3d(180,180,180,360deg);
     }
+#miniNav{
+    user-select: none;
+}
+#miniNav span{
+    color: dodgerblue;
+}

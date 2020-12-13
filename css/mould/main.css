@@ -17,12 +17,13 @@ body{
     border-radius: 10px;
     /*opacity: .7;*/
 }
+
 /*.main :first-child{*/
 /*    margin: 20vh 0;*/
 /*}*/
     .main .title{
         display: inherit;
-        justify-content: inherit;
+        /*justify-content: inherit;*/
         flex-direction: column;
         align-items: center;
         /*align-items: center;*/
@@ -44,10 +45,14 @@ body{
         }
     .main .content{
         height: 80%;
-        width: 80%;
-        padding: 20px;
+        width: 88%;
+        padding: 20px 0;
         display: inherit;
-        justify-content: inherit;
-        flex-direction: column;
-        align-items: center;
+        justify-content: left;
+        flex-direction: row;
+        align-items: normal;
     }
+        .main .content p{
+            font-size: 20px;
+            color: dodgerblue;
+        }

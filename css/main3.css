@@ -1,0 +1,12 @@
+
+.main .content{
+    /*height: 80%;*/
+    /*width: 80%;*/
+    padding: 20px;
+    display: inherit;
+
+}
+    .main .content p{
+        font-size: 20px;
+        color: dodgerblue;
+    }
