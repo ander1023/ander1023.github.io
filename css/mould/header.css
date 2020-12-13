@@ -36,8 +36,8 @@ a:hover{
     display: flex;
     position: fixed;
 
-    height: 100vh;
-    width: 100px;
+    height: 60px;
+    width: 100%;
 
     top: 0;
     right: 10px;
@@ -51,23 +51,17 @@ a:hover{
 
     user-select: none;
 }
-#author{
-    font-size: 20px;
-    position: inherit;
-    bottom: 70px;
-    /*right: 0;*/
-    letter-spacing: -1px;
-    line-height: inherit;
-    /*padding: 0 20px;*/
-    height: 50px;
-}
+
 #topBt{
-    position: inherit;
+    position: fixed;
     font-size: 26px;
+    font-weight: bolder;
     height: 20px;
     bottom: 40px;
+    right: 30px;
     line-height: 20px;
     margin-top: 0;
+    color: white;
 }
 #topBt:hover{
     color: dodgerblue;
@@ -80,7 +74,7 @@ a:hover{
     /*line-height: inherit;*/
     /*flex-grow: 1;*/
     /*justify-content: flex-end;*/
-    width: inherit;
+    width: 100%;
 }
     #nav.menuItem.current{
         color: dodgerblue;
@@ -91,6 +85,9 @@ a:hover{
         /*font-size: 25px;*/
         /*font-weight: bolder;*/
         /*letter-spacing: 2px;*/
+        position: absolute;
+        top: 0;
+        right: 0;
         height: inherit;
         line-height: inherit;
         /*padding: 0 20px;*/
@@ -108,6 +105,17 @@ a:hover{
         opacity: 0;
         visibility: hidden;
         display: none;
+    }
+    #nav #author{
+        font-size: 20px;
+        position: absolute;
+        /*bottom: 70px;*/
+        /*right: 0;*/
+        left: 25px;
+        letter-spacing: -1px;
+        line-height: inherit;
+        /*padding: 0 20px;*/
+        height: 50px;
     }
 
 #menu{

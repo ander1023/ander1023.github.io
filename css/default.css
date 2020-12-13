@@ -1,3 +1,6 @@
+body{
+    overflow: hidden;
+}
 .main{
     justify-content: center;
     margin: 20vh;
@@ -9,7 +12,7 @@
     }
     .main #touXiang{
         border-radius: 50%;
-        border: white 5px solid;
+        border: white 7px solid;
         opacity: 1;
         width: 200px;
         height: 200px;
