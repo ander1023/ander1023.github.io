@@ -62,9 +62,10 @@ function toggleMenuVisi(){
         status = !status;
     }
 }
-function getScrollHeight(demo){
-    var height = 0;
-
+setInterval(getScrollHeight(),1000)
+function getScrollHeight(){
+    var height = document.body.scrollHeight;
+    console.log(height);
 
     return height;
 }
