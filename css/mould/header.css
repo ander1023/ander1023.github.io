@@ -61,11 +61,20 @@ a:hover{
     font-weight: bolder;
     height: 20px;
     bottom: 100px;
-    right: 30px;
+    right: -50px;
     line-height: 20px;
     margin-top: 0;
     color: white;
     user-select: none;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: .7s;
+}
+#topBt.show{
+    visibility: visible;
+    opacity: 1;
+    right: 30px;
 }
 #topBt:hover{
     color: dodgerblue;
@@ -193,11 +202,11 @@ a:hover{
                 color: dodgerblue;
             }
 
-::-webkit-scrollbar{
-    width: 12px;
-    background: rgba(255,255,255,1);
-}
-::-webkit-scrollbar-thumb{
-    background: #7dbcfa;
-    border-radius: 6px;
-}
+/*::-webkit-scrollbar{*/
+/*    width: 12px;*/
+/*    background: #a7cdfa;*/
+/*}*/
+/*::-webkit-scrollbar-thumb{*/
+/*    background: dodgerblue;*/
+/*    border-radius: 10px;*/
+/*}*/

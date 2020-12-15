@@ -29,10 +29,17 @@
         </ul>
 
     </div>
-<!--    <div id="title">-->
-<!--        <h1>123123</h1>-->
-<!--    </div>-->
-    <div class="main kjj">
+    <div id="sliderOpen"></div>
+    <div id="slider">
+        <div id="sliderClose">X</div>
+        <ol>
+            <li><a href="#ideaKJJ">idea快捷键</a></li>
+            <li><a href="#sublimeKJJ">sublime快捷键</a></li>
+            <li><a href="#gitML">git命令</a></li>
+            <li><a href="#dockerML">docker命令</a></li>
+        </ol>
+    </div>
+    <div class="main kjj" id="ideaKJJ">
         <div class="title">
             <h1>idea快捷键</h1>
             <p><span style="color: dodgerblue">tag：</span>快捷键</p>
@@ -73,7 +80,7 @@
     </div>
 
 
-    <div class="main kjj">
+    <div class="main kjj" id="sublimeKJJ">
         <div class="title">
             <h1>sublime快捷键</h1>
             <p><span style="color: dodgerblue">tag：</span>快捷键</p>
@@ -111,7 +118,7 @@
             </p>
         </div>
     </div>
-    <div class="main ml">
+    <div class="main ml" id="gitML">
         <div class="title">
             <h1>git命令</h1>
             <p><span style="color: dodgerblue">tag：</span>命令</p>
@@ -153,11 +160,13 @@
             </p>
         </div>
     </div>
-    <div class="main ml">
+
+    <div class="main ml" id="dockerML">
         <div class="title">
             <h1>docker命令</h1>
             <p><span style="color: dodgerblue">tag：</span>命令</p>
         </div>
+
         <div class="content">
             <p>
                 docker run -it --name text -d centos:centos7 /bin/bash<br>
@@ -175,5 +184,6 @@
         <p>Made with by 大山猛</p>
     </div>
     <script rel="script" src="js/header.js"></script>
+    <script rel="script" src="js/main2.js"></script>
 </body>
 </html>

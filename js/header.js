@@ -1,6 +1,6 @@
 let menu = document.getElementById("menu");
 let menuBt = document.getElementById("menuButton");
-let author = document.getElementById("author");
+let topBt = document.getElementById("topBt");
 let body = document.body;
 let status = false;
 body.onload = ()=>{
@@ -75,4 +75,15 @@ function pageTop(){
         top : 0,
         behavior:"smooth"
     })
+}
+// setInterval(console.log(topBt.offsetTop),1000);
+body.onscroll = ()=>{
+    const winHeihgt = document.documentElement.clientHeight;
+    const scrollHeight = window.pageYOffset;
+    if (scrollHeight <= winHeihgt){
+        topBt.classList.remove("show");
+    }else{
+        topBt.classList.add("show");
+    }
+
 }
