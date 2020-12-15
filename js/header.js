@@ -1,5 +1,6 @@
 let menu = document.getElementById("menu");
 let menuBt = document.getElementById("menuButton");
+let author = document.getElementById("author");
 let body = document.body;
 let status = false;
 body.onload = ()=>{
@@ -62,13 +63,13 @@ function toggleMenuVisi(){
         status = !status;
     }
 }
-setInterval(getScrollHeight(),1000)
-function getScrollHeight(){
-    var height = document.body.scrollHeight;
-    console.log(height);
-
-    return height;
-}
+// setInterval(getScrollHeight(),1000)
+// function getScrollHeight(){
+//     var height = document.body.scrollHeight;
+//     console.log(height);
+//
+//     return height;
+// }
 function pageTop(){
     scrollTo({
         top : 0,

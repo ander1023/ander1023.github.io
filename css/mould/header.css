@@ -5,6 +5,9 @@ body.menuOpen{
     /*opacity: .3;*/
 }
 body{
+    /*height: 100vh;*/
+    /*width: 100vh;*/
+
     opacity: 0;
     transition: .7s;
 
@@ -57,11 +60,12 @@ a:hover{
     font-size: 26px;
     font-weight: bolder;
     height: 20px;
-    bottom: 40px;
+    bottom: 100px;
     right: 30px;
     line-height: 20px;
     margin-top: 0;
     color: white;
+    user-select: none;
 }
 #topBt:hover{
     color: dodgerblue;
@@ -107,7 +111,7 @@ a:hover{
         display: none;
     }
     #nav #author{
-        font-size: 20px;
+        font-size: 24px;
         position: absolute;
         /*bottom: 70px;*/
         /*right: 0;*/
@@ -143,6 +147,7 @@ a:hover{
         /*position: inherit;*/
         /*top: 12px;*/
         /*right: 15px;*/
+        margin-top: 20px;
         font-size: 25px;
         font-weight: bolder;
         letter-spacing: 1px;
@@ -178,7 +183,7 @@ a:hover{
                 height: 60px;
                 width: 220px;
                 text-decoration: none;
-                font-size: 24px;
+                font-size: 20px;
                 font-weight: bolder;
                 color: #fff;
                 user-select: none;
@@ -187,3 +192,12 @@ a:hover{
             #menu ul li a:hover{
                 color: dodgerblue;
             }
+
+::-webkit-scrollbar{
+    width: 12px;
+    background: rgba(255,255,255,1);
+}
+::-webkit-scrollbar-thumb{
+    background: #7dbcfa;
+    border-radius: 6px;
+}
