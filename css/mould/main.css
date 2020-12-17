@@ -12,14 +12,14 @@ body{
     align-items: center;
     width: 60%;
     margin-top: 60px;
-    /*height: 60vh;*/
+    /*height: 100vh;*/
     background: rgba(255,255,255,.7);
     border-radius: 10px;
     /*opacity: .7;*/
 }
 
-/*.main :first-child{*/
-/*    margin: 20vh 0;*/
+/*.main :last-child{*/
+/*    margin-bottom: 20vh;*/
 /*}*/
     .main .title{
         display: inherit;
