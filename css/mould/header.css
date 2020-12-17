@@ -31,7 +31,7 @@ p{
     color: #7dbcfa;
 }
 a{
-    color: slategray;
+    color: white;
     text-decoration: none;
 }
 a:hover{
@@ -147,7 +147,8 @@ a:hover{
     z-index: 10002;
     visibility: hidden;
     opacity: 0;
-    background: rgba(0,0,0,.85);
+    background: url("../../images/bg03.png") center center fixed;
+    background-size: cover;
 }
     #menu.inner{
         visibility: visible;
