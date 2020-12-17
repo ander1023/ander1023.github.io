@@ -13,9 +13,11 @@ body{
 
     padding: 0;
     margin: 0;
-    background: url("../../images/bg01.jpg") no-repeat fixed;
+    background: url("../../images/bg02.png") center center no-repeat fixed;
     background-size: cover;
+    /*backdrop-filter: blur(1px);*/
 }
+
 body.load{
     opacity: 1;
 }
@@ -29,7 +31,7 @@ p{
     color: #7dbcfa;
 }
 a{
-    color: white;
+    color: slategray;
     text-decoration: none;
 }
 a:hover{
@@ -185,7 +187,7 @@ a:hover{
             border-bottom: rgba(30,144,255,.7) solid 2px;
         }
         #menu ul li:last-child{
-            border: 0px;
+            border: 0;
         }
             #menu ul li a{
                 display: block;
