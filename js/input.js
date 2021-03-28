@@ -37,22 +37,27 @@ array[2] = list2
 let mode = 1;
 let count = 0;
 
-document.body.onkeypress = () =>{
-    setTimeout(isTrue,50)
+// document.body.onkeypress = () =>{
+//     setTimeout(isTrue,50)
+//
+// }
 
-}
+window.setInterval(isTrue,100)
 
 
 function isTrue(){
-    if (showVar.innerText===inputVar.value){
-        showVar.changeValue();
-        showVar.resetColor()
-        inputVar.clear();
-    }else{
-        showVar.changeColor()
-        inputVar.clear();
-    }
+    if (inputVar.value!==""){
+        if (showVar.innerText===inputVar.value){
+            showVar.changeValue();
+            showVar.resetColor()
+            inputVar.clear();
+        }else{
+            showVar.changeColor()
+            inputVar.clear();
+        }
 
+    }
+    console.log(inputVar.value)
 }
 
 showVar.changeValue = () => {
