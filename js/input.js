@@ -56,8 +56,8 @@ function isTrue(){
 }
 
 showVar.changeValue = () => {
-    count += 1
     showVar.innerText = array[mode][count];
+    count += 1
     if (count === array[mode].length){
         count = 0;
     }
@@ -72,20 +72,22 @@ inputVar.clear = () => {
     inputVar.value = "";
 }
 function changeMode(){
-    count = 0;
     showVar.changeValue();
     showVar.resetColor();
 }
-//重复性的操作
 function bt1(){
     mode  = 0;
+    count = 0;
     changeMode();
 }
 function bt2(){
+//重复性的操作
+    count = 0;
     mode  = 1;
     changeMode();
 }
 function bt3(){
     mode  = 2;
+    count = 0;
     changeMode();
 }
