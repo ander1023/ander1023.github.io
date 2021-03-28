@@ -72,9 +72,9 @@ inputVar.clear = () => {
     inputVar.value = "";
 }
 function changeMode(){
+    count = 0;
     showVar.changeValue();
     showVar.resetColor();
-    count = 0;
 }
 //重复性的操作
 function bt1(){
