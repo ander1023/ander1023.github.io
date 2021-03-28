@@ -1,12 +1,16 @@
 let showVar = document.getElementById("show");
 let inputVar = document.getElementById("input_text");
 
-let list = [1,2,3,4,5,6,7,8,9,0,9,8,7,6,5,4,3,2,]
-let list1 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+let list = [1,2,3,4,5,1,2,3,4,5,6,7,8,9,0,6,7,8,9,0]
+let list1 = ['q', 'p', 'w', 'o', 'e', 'i', 'r', 'u', 't', 'y', 'q', 'p', 'w', 'o', 'e', 'i', 'r', 'u', 't', 'y',
+    'a', ';', 's', 'l', 'd', 'k', 'f', 'j', 'g', 'h','a', ';', 's', 'l', 'd', 'k', 'f', 'j', 'g', 'h',
+    'z', '/', 'x', '.', 'c', ',', 'v','m','b','n']
 //如何将标点符号存进list2中
 let list2 = [];
-
-
+let list3 = ['b','p','m','f','d','t','n','l','g','k','h','j','q','x','zh','ch','sh','r','z','c','s','y','w',
+    'a','o','e','i','u','v','ai','ei','ui','ao','ou','iu','ie','ve','er','an','en','in','un','vn',
+    'ang','eng','ing','ong','zhi','chi','shi',
+    'ri','zi','ci','si','yi','wu','yu','ye','yu','yuan','yin','yun','ying']
 initList2();
 function initList2(){
     let count = 0
@@ -27,26 +31,27 @@ function initList2(){
         count++
     }
 }
-// alert(list2)
+
 let array = []
 array[0] = list;
 array[1] = list1
 array[2] = list2
+array[3] = list3
 //如果有很多如何批量解决嘞
 
 let mode = 1;
-let count = 0;
+let count = 1;
 
 // document.body.onkeypress = () =>{
 //     setTimeout(isTrue,50)
 //
 // }
 
-window.setInterval(isTrue,100)
+window.setInterval(isTrue,50)
 
 
 function isTrue(){
-    if (inputVar.value!==""){
+    if (inputVar.value!=="" && mode < 2){
         if (showVar.innerText===inputVar.value){
             showVar.changeValue();
             showVar.resetColor()
@@ -56,15 +61,31 @@ function isTrue(){
             inputVar.clear();
         }
 
+    }else if (inputVar.value!==""){
+        if (showVar.innerText===inputVar.value){
+            showVar.changeValue();
+            showVar.resetColor()
+            inputVar.clear();
+        }else{
+            // showVar.changeColor()
+            // inputVar.clear();
+        }
     }
-    console.log(inputVar.value)
 }
 
 showVar.changeValue = () => {
-    showVar.innerText = array[mode][count];
-    count += 1
-    if (count === array[mode].length){
-        count = 0;
+    if (mode < 2){
+        showVar.innerText = array[mode][parseInt(count/3)];
+        count += 1
+        if (count === array[mode].length*3){
+            count = 0;
+        }
+    }else {
+        showVar.innerText = array[mode][count];
+        count += 1
+        if (count === array[mode].length){
+            count = 0;
+        }
     }
 }
 showVar.changeColor = () =>{
@@ -93,6 +114,11 @@ function bt2(){
 }
 function bt3(){
     mode  = 2;
+    count = 0;
+    changeMode();
+}
+function bt4(){
+    mode  = 3;
     count = 0;
     changeMode();
 }

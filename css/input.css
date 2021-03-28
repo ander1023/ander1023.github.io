@@ -6,12 +6,14 @@
 #show {
     height: 75px;
     width: 80%;
-    font-size: 60px;
+    font-size: 80px;
     line-height: 75px;
     margin: 0 auto;
     text-align: center;
     color: white;
     margin-top: 80px;
+    user-select: none;
+    cursor: default;
 }
 #input {
     height: 40%;
@@ -23,7 +25,8 @@
     justify-content: center;
 }
 #input input{
-    width: 50px;
+    color: white;
+    width: 80px;
     height: 50px;
     text-align: center;
     font-size: 30px;
@@ -51,7 +54,7 @@
     text-decoration: none;
     display: inline-block;
 
-    margin:0 30px;
+    margin:0 10px;
     cursor: pointer;
 
 }
