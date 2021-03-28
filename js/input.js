@@ -56,8 +56,8 @@ function isTrue(){
 }
 
 showVar.changeValue = () => {
-    showVar.innerText = array[mode][count];
     count += 1
+    showVar.innerText = array[mode][count];
     if (count === array[mode].length){
         count = 0;
     }
