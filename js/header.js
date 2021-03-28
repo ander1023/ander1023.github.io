@@ -7,6 +7,7 @@ body.onload = ()=>{
     setTimeout(
         ()=>{
             body.classList.add("load");
+            document.getElementById("input_text").focus();
         },150
     )
 }

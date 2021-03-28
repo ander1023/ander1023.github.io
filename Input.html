@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/mould/header.css">
+<!--    <link rel="stylesheet" href="css/mould/main.css">-->
+    <link rel="stylesheet" href="css/mould/footer.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/input.css">
+    <title>Input</title>
+</head>
+<body>
+<div id="header">
+    <div id="nav">
+        <div id="author"><a href="index.html">大山猛</a></div>
+        <a id="menuButton" onclick="toggleMenuVisi()">MENU</a>
+    </div>
+</div>
+<div id="topBt" onclick="pageTop()">TOP</div>
+
+<div id="menu">
+
+    <ul>
+        <li><a style="color: dodgerblue" href="index.html" >主页</a></li>
+        <li><a href="main1.html">推荐</a></li>
+        <li><a href="main2.html">文章</a></li>
+        <li><a href="main3.html">关于</a></li>
+        <li> <a id="closeItem" onclick="">CLOSE</a></li>
+
+    </ul>
+
+</div>
+    <div id="show">a</div>
+    <div id="input">
+        <input id="input_text" type="text" value="">
+    </div>
+    <div id="button">
+        <input class="btn yellow" type="button" value="数字练习" onclick="bt1()">
+        <input class="btn green" type="button" value="字母练习" onclick="bt2()">
+        <input class="btn blue" type="button" value="标点练习" onclick="bt3()">
+    </div>
+
+<div id="footer">
+    <p>Power By Github Pages</p>
+    <p>Made with by 大山猛</p>
+</div>
+</body>
+<script src="js/input.js"></script>
+<script rel="script" src="js/header.js"></script>
+</html>

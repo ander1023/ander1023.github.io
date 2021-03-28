@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#show {
+    height: 75px;
+    width: 80%;
+    font-size: 60px;
+    line-height: 75px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+}
+#input {
+    height: 40%;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#input input{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    border: 0;
+    border-bottom: royalblue 3px solid;
+    background-color: transparent;
+    caret-color: dodgerblue;
+}
+#button{
+    height: 50px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+
+}
+.btn{
+    padding: 8px 18px;
+    font-size: 14px;
+    position: relative;
+    border: 0;
+    text-align: center;
+    color: white;
+    transition: all 0.08s;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+
+    margin:0 30px;
+    cursor: pointer;
+
+}
+
+.btn.cyan     { background: #1BBCC2 }
+.btn.red    { background: #FA5A5A }
+.btn.orange   { background: #FF7A37 }
+.btn.blue     { background: #689DD3 }
+.btn.purple   { background: #DA80CF }
+.btn.yellow   { background: #F0D264 }
+.btn.green    { background: #70D170 }
+
+/* Button Hovers */
+.btn.red:hover    { background: #F84747 }
+.btn.orange:hover   { background: #FF6C22 }
+.btn.cyan:hover   { background: #15B0B6 }
+.btn.blue:hover   { background: #478DD5 }
+.btn.purple:hover   { background: #DF68D0 }
+.btn.yellow:hover   { background: #F3CD3F }
+.btn.green:hover  { background: #46D146 }
+
+/* Button Clicks */
+.btn.red:active   { background: #E35252 }
+.btn.orange:active  { background: #E8601B }
+.btn.cyan:active  { background: #169499 }
+.btn.blue:active  { background: #608FBF }
+.btn.purple:active  { background: #C465B7 }
+.btn.yellow:active  { background: #DBC05B }
+.btn.green:active   { background: #60BB60 }
