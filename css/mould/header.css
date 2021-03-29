@@ -16,6 +16,7 @@ body{
     background: url("../../images/bg02.png") center center no-repeat fixed;
     background-size: cover;
     /*backdrop-filter: blur(1px);*/
+
 }
 
 body.load{
