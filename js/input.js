@@ -1,4 +1,4 @@
-let showVar = document.getElementById("show");
+﻿let showVar = document.getElementById("show");
 let inputVar = document.getElementById("input_text");
 
 let list = [1,2,3,4,5,1,2,3,4,5,6,7,8,9,0,6,7,8,9,0]
@@ -51,7 +51,7 @@ window.setInterval(isTrue,50)
 
 
 function isTrue(){
-    if (inputVar.value!=="" && mode < 2){
+    if (inputVar.value!=="" && mode < 3){
         if (showVar.innerText===inputVar.value){
             showVar.changeValue();
             showVar.resetColor()
@@ -74,7 +74,7 @@ function isTrue(){
 }
 
 showVar.changeValue = () => {
-    if (mode < 2){
+    if (mode < 3){
         showVar.innerText = array[mode][parseInt(count/3)];
         count += 1
         if (count === array[mode].length*3){
