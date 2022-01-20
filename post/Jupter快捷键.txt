@@ -1,0 +1,29 @@
+ESC + H 查看帮助
+
+命令行模式：
+enter       进入编辑模式
+
+a           上行插入代码块
+b           下行插入代码块
+x           剪切选择的代码块
+c           复制选择的代码块
+v           粘贴到下面
+shift v     粘贴到上面
+d d         删除选择的代码块
+
+y           代码块变成代码
+m           代码块变成Markdown
+
+l           显示行号
+
+Ctrl enter      运行
+Shift enter     运行 并选择下一个
+Alt enter       运行 并插入一个
+
+
+编辑模式
+tab         自动补全 
+ctrl /      注释
+ctrl d      删除当前行   
+ctrl m      进入命令模式
+

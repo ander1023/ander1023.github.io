@@ -1,28 +1,32 @@
-﻿c ent	下行插入
-c s ent 上行插入
-c s k 	删除整行
-c k k 	删除当前到行尾
-c s d 	复制到下一行
-c / 	当行注释
-c s / 	多行注释
-t		向右缩进
-s t		反向缩进
-c s [	折叠选中
-c s ]	展开选中
-c k 0 	展开所有
-c m		找括号
-c j		多行代码合并为一行
-c s ↑/↓	移动一行代码
+﻿Ctrltrl
+Enterer
+Shifthift
 
-a f3	同名称编辑
+Ctrl Enter	下行插入
+Ctrl Shift Enter      上行插入
+Ctrl Shift k 	删除整行
+Ctrl k k 	删除当前到行尾
+Ctrl Shift d 	复制到下一行
+Ctrl / 	当行注释
+Ctrl Shift / 	多行注释
+Tab		向右缩进
+Shift Tab		反向缩进
+Ctrl Shift [	折叠选中
+Ctrl Shift ]	展开选中
+Ctrl k 0 	展开所有
+Ctrl m		找括号
+Ctrl j		多行代码合并为一行
+Ctrl Shift ↑/↓	移动一行代码
+
+Alt F3	同名称编辑
 
 
-c f		普通搜索框
-c s f	文件夹搜索框
-c p/g/r	文件/跳行/函数
-c s p	命令框
+Ctrl f		普通搜索框
+Ctrl Shift f	文件夹搜索框
+Ctrl p/g/r	文件/跳行/函数
+Ctrl Shift p	命令框
 
 
 
 F11 全屏模式
-Shift+F11 免打扰模式
+Shifthift+F11 免打扰模式
