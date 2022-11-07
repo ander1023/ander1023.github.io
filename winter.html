@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>这个冬天</title>
+</head>
+<style type="text/css">
+	body{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: pink;
+		cursor: pointer;
+	}
+	
+	div{
+		transition: 0.12s;
+		margin-top: 10%;
+	}
+	@media screen and (max-width: 600px) {
+  div{
+		transition: 0.12s;
+		margin-top: 45%;
+	}
+}
+	#main{
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.text{
+		font-family: KaiTi;
+		font-weight: bolder;
+		font-size: 3rem;
+		display: block;	
+		width: 100%;
+		text-align: left;
+		user-select: none;
+	}
+	#info{
+		position: absolute;
+		opacity: 0  ;
+	}
+</style>
+<body>
+	<div id="main">
+		<span class="text">这个冬天我们要</span>
+		<span class="text">一起吃火锅</span>
+		<span class="text">一起看电影</span>
+		<span class="text">一起看雪</span>
+		<span class="text">一起跨年</span>
+	</div>
+	<div id="info">
+		<span class="text">一起吗一起吗</span>
+		<span class="text">:)</span>
+	</div>
+	
+</body>
+<script type="text/javascript">
+	var flag = false
+	document.onclick = ()=>{
+		// alert(1)
+		change()
+	}
+	function change() {
+		var info = document.getElementById("info");
+		var main = document.getElementById("main");
+		if(flag){
+			info.style.opacity = 0;
+			main.style.opacity = 1;
+		}else{
+			info.style.opacity = 1;
+			main.style.opacity = 0;
+		}
+
+		flag = !flag
+
+	}
+	// setTimeout(()=>{
+	// 	alert("一起吗")
+	// }, 3000 )
+</script>
+</html>

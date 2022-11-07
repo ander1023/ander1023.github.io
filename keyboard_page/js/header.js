@@ -11,7 +11,6 @@ body.onload = ()=>{
         },150
     )
 }
-//
 
 body.onmousedown = (event)=> {
     setTimeout(
