@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>请选择</title>
+	<style type="text/css">
+		#main{
+			margin-top: 30vh;
+		}
+		#main img{
+			width: 30vw;
+		}
+		#main div{
+			width: 100vw;
+			display: flex;
+			justify-content: center;
+			margin-top: 2vh;
+		}
+		#bt{
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<div><img src="./img/1.png" id="show" /></div>
+		<div>
+			<span id="bt" onclick="bt1()">停止</span>
+		</div>
+	</div>
+</body>
+
+
+<script type="text/javascript">
+	var bt = document.querySelector("#bt")
+	var show = document.querySelector("#show")
+	var run = true
+	var state = 1
+	setInterval(function(){
+		if(run){
+			
+			if(state == 1){
+				show.src="./img/2.png"
+				state= 0
+			}else{
+				show.src="./img/1.png"
+				state = 1
+			}
+		}
+	},100)
+	function bt1(){
+		console.log(1)
+		if(run){
+			run = false
+			bt.innerHTML="开始";
+		}else{
+			run = true
+			bt.innerHTML="停止";
+		}
+	}
+
+
+</script>
+</html>
