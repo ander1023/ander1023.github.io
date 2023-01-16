@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>睡觉!</title>
+	<style type="text/css">
+		body{
+		background-color:rgba(47,79,79,.8)}
+
+		#main{
+			margin-top: 30vh;
+		}
+		#main img{
+			width: 30vw;
+		}
+		#main div{
+			width: 100vw;
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			margin-top: 2vh;
+		}
+		span{
+			color: rgba(255, 255, 255, .8);
+			width: 100vw;
+			text-align: center;
+			margin-bottom: 3px;
+		}
+		button{
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<div><h2>根据90分钟循环 计算最优解</h2></div>
+		<div>
+			<span>输入睡眠时间(例如 <b>2.42</b> &nbsp<i>两点四十二分</i>)</span>
+			<input id="sleep" type="text" name="sleep">
+		</div>
+		<div>
+			<span>输入想起床的时间(例如 <b>8</b> &nbsp<i>八点整</i>)</span>
+			<input id="wake"type="text" name="wake">
+		</div>
+		<div>
+			<button onclick="bt()">开始计算</button>
+		</div>
+	</div>
+</body>
+
+
+<script type="text/javascript">
+	var sleep = document.querySelector("#sleep")
+
+	var wake = document.querySelector("#wake")
+function bt(){
+	var sleepInt = Math.floor(sleep.value)
+	var sleepFloat = sleep.value*100%100 + sleepInt * 60//计算总分钟数
+	var wakeInt = Math.floor(wake.value)
+	var wakeFloat = wake.value*100%100 + wakeInt * 60//计算总分钟数
+	var pre
+	var after
+	var preCount=0
+	var afterCount=0
+	for(add = 90;;){
+		afterCount += 1
+		sleepFloat += add
+		if(sleepFloat > wakeFloat){
+ 			after = sleepFloat
+ 			break
+		}
+	}
+	preCount = afterCount - 1
+	pre = after - 90
+	alert("推荐时间：" + Math.floor(pre / 60) + " : " +  pre % 60 + " | 循环次数：" + preCount + "\n推荐时间：" + Math.floor(after / 60) + " : " +  after % 60 + " | 循环次数：" + afterCount)
+
+
+}
+</script>
+</html>
