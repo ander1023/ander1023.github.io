@@ -36,7 +36,7 @@
 	<div id="main">
 		<div><h2>根据90分钟循环 计算最优解</h2></div>
 		<div>
-			<span>输入睡眠时间(例如 <b>2.42</b> &nbsp<i>两点四十二分</i>)</span>
+			<span>输入睡眠时间(例如 <b>21.42</b> &nbsp<i>九点四十二分</i>)</span>
 			<input id="sleep" type="text" name="sleep">
 		</div>
 		<div>
@@ -55,9 +55,17 @@
 
 	var wake = document.querySelector("#wake")
 function bt(){
+	
+	
 	var sleepInt = Math.floor(sleep.value)
 	var sleepFloat = sleep.value*100%100 + sleepInt * 60//计算总分钟数
+
 	var wakeInt = Math.floor(wake.value)
+	if (sleepInt > wakeInt){
+		wakeInt += 24
+
+	}
+console.log(wakeInt)
 	var wakeFloat = wake.value*100%100 + wakeInt * 60//计算总分钟数
 	var pre
 	var after
@@ -73,7 +81,11 @@ function bt(){
 	}
 	preCount = afterCount - 1
 	pre = after - 90
-	alert("推荐时间：" + Math.floor(pre / 60) + " : " +  pre % 60 + " | 循环次数：" + preCount + "\n推荐时间：" + Math.floor(after / 60) + " : " +  after % 60 + " | 循环次数：" + afterCount)
+
+	var preInt = Math.floor(pre / 60) > 24 ? Math.floor(pre / 60)-24 :Math.floor(pre / 60)
+	var afterInt = Math.floor(after / 60) > 24 ? Math.floor(after / 60)-24 :Math.floor(after / 60)
+	alert("推荐时间：" + preInt + " : " +  pre % 60 + " | 循环次数：" + preCount 
+		+ "\n推荐时间：" + afterInt + " : " +  after % 60 + " | 循环次数：" + afterCount)
 
 
 }
