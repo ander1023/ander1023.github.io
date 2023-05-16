@@ -45,7 +45,7 @@
 				height: 100%;
 				width: 0%;
 				border-radius: 5px;
-				background: #a7cf4a;
+				background:rgba(220, 220, 220, .4);
 			}
 			input {
 				float: right;
@@ -56,10 +56,24 @@
 				float: left;
 			}
 			body{
+                width: 100vw;
+                height: 100vh;
+                overflow: hidden;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background: url('img/18775953.gif');
+                background:no-repeat center  url('img/wallhaven-72lxdy.jpg') ;
+                background-size:   cover;
+            }
+            #player1{
+                background-color: rgba(99, 22, 112, .6);
+                border-radius: 10%;
+            }
+            video{
+                display: none;
+            }
+            .range{
+                height: 2vh;
             }
 		</style>
 	</head>
