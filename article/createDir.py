@@ -2,7 +2,14 @@
 import os
 
 l = os.listdir()
-st = ''
+st = """<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>"""
 def print1(s=""):
     global st
     st+=s+"\n"
@@ -18,5 +25,15 @@ for i in l:
 #         print1('[链接]({})'.format(i))
         print1("</br>")
 # print(st)
+
+st+="""</body>
+</html>"""
+
+
 with open('index.html','w') as f:
    f.write(st)
+   
+   
+   
+
+    
