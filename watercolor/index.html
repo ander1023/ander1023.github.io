@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>水彩</title>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+	</head>
+	<body>
+		
+		<div id="cont">
+			
+			<!-- <img src="image/a.jpg" class="ima" id="a">
+			
+			<img src="image/b.jpg" class="ima" id="b">
+			
+			<img src="image/c.jpg" class="ima" id="c">
+			
+			<img src="image/d.jpg" class="ima" id="d">
+			
+			<img src="image/e.jpg" class="ima" id="e">
+			
+			<img src="image/f.jpg" class="ima" id="f">
+			
+			<img src="image/g.jpg" class="ima" id="g">
+			
+			<img src="image/h.jpg" class="ima" id="h"> -->
+
+		</div>
+	</body>
+
+	<script>
+		var files = [
+'1.jpg',
+'2.jpg',
+'20210330_225552.jpg',
+'20210330_225558.jpg',
+'20210331_232255.jpg',
+'20210331_233528.jpg',
+'20210510_234440.jpg',
+'20210510_234533.jpg',
+'20210510_234546.jpg',
+'20210517_211452.jpg',
+'20210520_174504.jpg',
+'20210522_135235.jpg',
+'20210523_154905.jpg',
+'20210525_221739.jpg',
+'20210602_100219.jpg',
+'20210615_155635.jpg',
+'20210615_161632.jpg',
+'20220623_231309.jpg',
+'20220810_230624~2.jpg',
+'3.jpg',
+'4.jpg',
+'IMG20230713233844.jpg',
+'Notes_200905_014117_1.jpg',
+'qq_pic_merged_1616931250086.jpg',
+'qq_pic_merged_1616931276916.jpg',
+'qq_pic_merged_1621934993366.jpg',
+'qq_pic_merged_1621935149354.jpg',
+		]
+
+
+		classList = ['a','b','c','d','e','f','g','h']
+		classListLen = classList.length
+		var count = 0
+		for(let index in files){
+			var image = new Image();
+			image.src = './image/'+files[index]
+			image.onload = function() {
+			var imageElement = this;
+			console.log(count)
+			imageElement.classList.add(classList[count]);
+			count > classListLen ? count = 0 : count++
+		};
+		document.getElementById('cont').appendChild(image);
+	}
+	
+	
+	</script>
+</html>
