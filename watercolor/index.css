@@ -27,9 +27,9 @@ img{
 	-webkit-transform: transform 0.8s;
 }
 
-img:hover{
+/* img:hover{
 	transform: scale(1.5) rotate(0deg) !important;
-}
+} */
 
 .a{
 	transform: rotate(12deg);
