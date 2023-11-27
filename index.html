@@ -2,54 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/mould/header.css">
-    <link rel="stylesheet" href="css/mould/main.css">
-    <link rel="stylesheet" href="css/default.css">
-    <title>大山猛_首页</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>萌萌仙贝</title>
+    <style>
+        img{
+            width: 250px;
+        }
+        a{
+            margin: 5px;
+            border: solid 2px #99ccff;
+            border-radius: 5px;
+            padding: 3px;
+            color: black;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <div id="header">
-        <div id="nav">
-            <div id="author"><a href="index.html">大山猛</a></div>
-            <a id="menuButton" onclick="toggleMenuVisi()">MENU</a>
-        </div>
-    </div>
-    <div id="topBt" onclick="pageTop()">TOP</div>
-
-    <div id="menu">
-
-        <ul>
-            <li><a style="color: dodgerblue" href="index.html" >主页</a></li>
-            <li><a href="main1.html">推荐</a></li>
-            <li><a href="main2.html">文章</a></li>
-            <li><a href="main3.html">关于</a></li>
-            <li> <a id="closeItem" onclick="">CLOSE</a></li>
-
-        </ul>
-
+    <img src="./images/Notes_200905_014117_1.jpg"/>
+    <hr>
+    <div id="detail">
+        <h2>介绍</h2>
     </div>
 
-    <!--    <div id="title">-->
-    <!--        <h1>123123</h1>-->
-    <!--    </div>-->
-    <div class="main">
-        <div class="title">
-            <h1>HOME</h1>
-            <p>这里当然是主页啦</p>
-        </div>
-        <div class="content">
-            <div id="touchTouXiang">
-                <a href="main3.html"><div id="touXiang"></div></a>
-            </div>
-            <div id="miniNav">
-                <a href="main1.html">推荐</a><span> | </span>
-                <a href="main2.html">文章</a><span> | </span>
-                <a href="main3.html">关于</a>
-            </div>
-        </div>
+    <hr>
+    <div id="mainpage">
+        <h2>个人主页</h2>
     </div>
-
-    <script rel="script" src="js/header.js"></script>
+    <hr>
+    <div id="friends">
+        <h2>友人</h2>
+    </div>
+    <hr>
+    <div  id="tools">
+        <h2>工具</h2>
+    </div>
 </body>
+
+<script>
+       
+    var friends = [
+        {
+            'key':'AllureYu',
+            'value':'https://allureyu.github.io'
+        }
+    ]
+    createA(friends,'friends')
+    var mainpage = [
+        {'key':'Github','value':'https://github.com/ander1023'},
+        {'key':'CSDN','value':'https://blog.csdn.net/Ander1023?type=blog'},
+        {'key':'Gitee','value':'https://gitee.com/ander1023'}
+    ]
+    createA(mainpage,'mainpage')
+    var detail = "欢迎光临？"
+    createP(detail,'detail')
+    var tools = [
+        {'key':'Winter','value':'winter.html'},
+        {'key':'打字练习','value':'keyboard_page/keyboard.html'},
+        {'key':'字母解释法','value':'letter_page/index.html'},
+        {'key':'硬币','value':'select/index.html'},
+        {'key':'睡觉！','value':'sleep/index.html'},
+        {'key':'眼保健操！ ','value':'eyes/index.html'},
+        {'key':'文章保存','value':'article/index.html'},
+    ]
+    createA(tools,'tools')
+
+
+
+
+    function createP(text,divId){
+        let a = document.createElement('p');
+        a.innerHTML=text
+        document.getElementById(divId).appendChild(a);
+    }
+    function createA(list, divId) {
+        for (var key in list) {  
+        let key1 =list[key].key; 
+        let value1 = list[key].value;
+        let a = document.createElement('a');
+        a.innerHTML=key1
+        a.setAttribute('href', value1);
+        a.setAttribute('target', '_blank');
+        document.getElementById(divId).appendChild(a);
+        }
+    }
+</script>
 </html>
