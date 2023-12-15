@@ -58,7 +58,24 @@
         {'key':'Gitee','value':'https://gitee.com/ander1023'}
     ]
     createA(mainpage,'mainpage')
-    var detail = "欢迎光临？"
+    const now = new Date();
+    const year = now.getFullYear()
+    const month = now.getMonth()
+    const day = now.getDay()
+    var year2 = year - 2001 - 1
+    if(month > 5 ||(month== 5&& day > 29)){
+        year2 = year - 2001
+    }
+
+
+    
+    const year1 = year-2001+1;
+
+    
+
+
+
+    var detail = year2 +"  欢迎光临  "+year1
     createP(detail,'detail')
     var tools = [
         {'key':'水彩','value':'./watercolor/index.html'},
